@@ -1,13 +1,19 @@
 Package: lexcore
-Title: What the Package Does (One Line, Title Case)
+Title: Common Data Structures for Legal Data Analysis
 Version: 0.0.0.9000
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+    person("Kristian", "Veps<c3><a4>l<c3><a4>inen", , "kristian.vepsalainen@proton.me", role = c("aut", "cre"))
+Description: Defines standard data structures for legislation, citations and legal texts, and converters from jurisdiction-specific packages such as 'finlex', 'swelex', 'danlex' and 'eurlex'. Forms the foundation of the 'lexverse' ecosystem.
+License: MIT + file LICENSE
 Config/roxygen2/version: 8.1.0
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 URL: https://github.com/KristianVepsalainen/lexcore
 BugReports: https://github.com/KristianVepsalainen/lexcore/issues
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Imports: 
+    cli,
+    rlang,
+    tibble
